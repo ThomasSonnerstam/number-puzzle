@@ -1,0 +1,42 @@
+.gameGridWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 60px);
+  grid-template-rows: repeat(var(--grid-size), 60px);
+  gap: 5px;
+  margin-bottom: 30px;
+  height: 40vh;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #66ab51;
+  width: 150px;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .gameBoard {
+    grid-template-columns: repeat(var(--grid-size), 100px);
+    grid-template-rows: repeat(var(--grid-size), 100px);
+    height: 60vh;
+  }
+
+  .buttonWrapper {
+    display: block;
+  }
+
+  .button {
+    margin-right: 10px;
+  }
+}

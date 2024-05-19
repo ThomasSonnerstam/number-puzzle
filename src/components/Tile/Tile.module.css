@@ -1,0 +1,13 @@
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #52c2d5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tile:empty {
+  background-color: #727272;
+}
